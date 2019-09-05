@@ -1,2 +1,2 @@
 # Algorithms
-Various algorithm implementations.
+Various algorithm implementations for fun/learning.
