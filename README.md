@@ -1,2 +1,2 @@
 # Algorithms
-Various algorithm implementations for fun/learning.
+Various algorithm implementations for fun/learning. These implementations are in no way optimized for production; they are purely for understanding the basic methods behind the algorithms.
