@@ -33,7 +33,6 @@ def quicksort(arr, pivot_choice="random", low=0, high=-1):
             if arr[a] > arr[c]: pivot_index = a # b >= a > c
             elif arr[c] > arr[b]: pivot_index = b # c > b >= a
             else: pivot_index = c # b >= c >= a
-
     else:
         raise Exception("Invalid pivot_choice parameter: {}".format(pivot_choice))
     
@@ -44,11 +43,9 @@ def quicksort(arr, pivot_choice="random", low=0, high=-1):
     arr[low], arr[pivot_index] = arr[pivot_index], arr[low]
     pivot_index = low
     i = low + 1 # arr[low+1], ..., arr[i-1] are all strictly less than the pivot
-    comp = 0
 
     for j in range(low + 1, high):
         # arr[i], ... arr[j] are all >= pivot
-        comp += 1
         if arr[j] < pivot:
             # We've encountered an element less than the pivot, so swap it with the element at index i
             arr[i], arr[j] = arr[j], arr[i]
